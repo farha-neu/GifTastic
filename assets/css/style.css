@@ -84,6 +84,13 @@ button{
   background: rgb(173,216,230);
 }
 
+.jumbotron h1{
+  font-family: 'Bowlby One SC', cursive;
+  color: blueviolet;
+  -webkit-text-stroke-color:black;
+  -webkit-text-stroke-width: 1px; 
+}
+
 .footer {
   clear: both;
   position: absolute;
