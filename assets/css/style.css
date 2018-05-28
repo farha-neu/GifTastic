@@ -1,19 +1,35 @@
-button,
+/* button,
 div,
 form,
 input {
   margin: 10px;
-}
+} */
 
-.movie{
+body{
   background: salmon;
+  background-image: url("../images/bg.png")
 }
-
-#movies-view{
-  background: sandybrown;
-}
-
-
 .gifLarge{
-  /* width:900px; */
+  width:100%;
+}
+
+.jumbotron,.card-header{
+  background: rgb(173,216,230,0.4);
+}
+
+button{
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+.search{
+  margin-bottom:20px;
+}
+
+.container{
+  background-color:rgb(240,255,240,0.6)
+}
+
+.modal-content{
+  background: honeydew;
 }

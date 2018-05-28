@@ -11,7 +11,7 @@ function renderMovieButtons(){
     $("#buttons-view").empty();
     for(var i = 0; i < movies.length; i++){
         var btn = $("<button>");
-        btn.addClass("movie-btn");
+        btn.addClass("movie-btn btn btn-success");
         btn.text(movies[i]);
         btn.attr("data-movie", movies[i]);
         $("#buttons-view").append(btn);
@@ -23,29 +23,28 @@ function displayGif(){
 
   
     var movie = $(this).attr("data-movie");
-    var qURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
-  
-
-    $.ajax({
-        url:qURL,
-        method:"GET"
-    }).then(function(data){
-        $("#movies-view").empty();  
-        console.log(data);
-        var mDiv = $("<div>");
-        mDiv.addClass("movieOMBD");
-        var poster = data.Poster;
-        var actors = data.Actors;
-        var plot = data.Plot;
-        console.log(poster,actors,plot);
-        var hPoster = $("<img>").attr("src",poster);
-        var hActors = $("<p>").text(actors);
-        var hPlot = $("<p>").text(plot);
-        if(poster!=='N/A'){
-            mDiv.append(hPoster);
-        }
-        mDiv.append(hActors,hPlot);
-        $("#movies-view").append(mDiv);
+    // var qURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+   
+    // $.ajax({
+    //     url:qURL,
+    //     method:"GET"
+    // }).then(function(data){
+    //     $("#movies-view").empty();  
+    //     console.log(data);
+    //     var mDiv = $("<div>");
+    //     mDiv.addClass("movieOMBD");
+    //     var poster = data.Poster;
+    //     var actors = data.Actors;
+    //     var plot = data.Plot;
+    //     console.log(poster,actors,plot);
+    //     var hPoster = $("<img>").attr("src",poster);
+    //     var hActors = $("<p>").text(actors);
+    //     var hPlot = $("<p>").text(plot);
+    //     if(poster!=='N/A'){
+    //         mDiv.append(hPoster);
+    //     }
+    //     mDiv.append(hActors,hPlot);
+    //     $("#movies-view").append(mDiv);
 
         var apiKey = "gSO37gi7qmY9JPzPea7Z67N6B0d7CzjS";
         var limit = 10;
@@ -55,6 +54,9 @@ function displayGif(){
             url:queryURL,
             method:"GET"
             }).then(function(response){
+
+                $("#movies-view").empty();
+
                 console.log(response);    
                 for(var i = 0; i < limit;i++){
                     var movieDiv = $("<div>");
@@ -75,18 +77,16 @@ function displayGif(){
                         "data-title":title,
                         "data-toggle":"modal",
                         "data-target":".exampleGif"
-
-        
                     });
                     hImageStill.addClass("gif");
                     var hImage = $("<img>").attr("src",imageSmall);
-                    var hRating = $("<p>").text(rating);
+                    var hRating = $("<p>").text("Rating: "+rating);
                     
                     movieDiv.append(hImageStill,hRating);
                     $("#movies-view").append(movieDiv);
                 }
             });
-     });  
+    //  });  
 }
 
 
