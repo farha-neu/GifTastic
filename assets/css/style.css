@@ -1,0 +1,19 @@
+button,
+div,
+form,
+input {
+  margin: 10px;
+}
+
+.movie{
+  background: salmon;
+}
+
+#movies-view{
+  background: sandybrown;
+}
+
+
+.gifLarge{
+  /* width:900px; */
+}
