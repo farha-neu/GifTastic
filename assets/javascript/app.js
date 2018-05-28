@@ -60,7 +60,7 @@ function displayGif(){
                 console.log(response);    
                 for(var i = 0; i < limit;i++){
                     var movieDiv = $("<div>");
-                    movieDiv.addClass("movie col-md-3 col-sm-6");
+                    movieDiv.addClass("movie img-thumbnail");
                     var imageSmallStill = response.data[i].images.fixed_height_still.url;
                     var imageSmall = response.data[i].images.fixed_height.url;
                     var imageLargeStill = response.data[i].images.downsized_still.url;
@@ -78,10 +78,14 @@ function displayGif(){
                         "data-toggle":"modal",
                         "data-target":".exampleGif"
                     });
-                    hImageStill.addClass("gif img-fluid img-thumbnail");
-                    var hRating = $("<p class='text-center'>").text("Rating: "+rating);
+                    hImageStill.addClass("gif img-fluid");
+                    var hCaption = $("<div>").addClass("caption");
+                    var hRating = $("<p class='text-center'>").text("Rating: ");
+                    var hRate = $("<span>").text(rating);
+                    hRating.append(hRate);
+                    hCaption.append(hRating);
                     
-                    movieDiv.append(hImageStill,hRating);
+                    movieDiv.append(hImageStill,hCaption);
                     $("#movies-view").append(movieDiv);
                 }
             });

@@ -7,13 +7,14 @@ input {
 
 body{
   background: salmon;
-  background-image: url("../images/bg.png")
+  background-image: url("../images/bg.png");
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 .gifLarge{
   width:100%;
 }
 
-.jumbotron,.card-header{
+.jumbotron,.card-header,.img-thumbnail{
   background: rgb(173,216,230,0.4);
 }
 
@@ -27,18 +28,43 @@ button{
 }
 
 .container{
-  background-color:rgb(240,255,240,0.6)
+  background-color:rgb(240,255,240,0.9)
 }
 
 .modal-content{
   background: honeydew;
 }
 
-.movie{
-  display: inline;
+.movie img{
+   max-height: 130px;
 }
 
-.movie img{
-  
-  width: 100%;
+.movie{
+  margin-right:9px;
+  display: inline-block;
+  margin-bottom:10px;
+}
+
+.modal-dialog{
+  max-width:650px;
+}
+
+.row{
+  padding:0;
+  text-align: center;
+}
+
+
+
+.caption{
+  margin-top:5px;
+}
+
+.caption p{
+  float: left;
+}
+
+.caption i{
+  float: right;
+  color: black;
 }
