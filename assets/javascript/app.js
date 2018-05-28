@@ -81,11 +81,9 @@ function displayGif(){
                         "data-target":".exampleGif"
                     });
                     hImageStill.addClass("gif img-fluid");
-                    var hCaption = $("<div>").addClass("caption");
-                    var hRating = $("<p class='text-center'>").text("Rating: ");
+                    var hCaption = $("<div>").addClass("caption text-center").text("Rating: ");
                     var hRate = $("<span>").text(rating);
-                    hRating.append(hRate);
-                    hCaption.append(hRating);
+                    hCaption.append(hRate);
                     
                     movieDiv.append(hImageStill,hCaption);
                     $("#movies-view").append(movieDiv);

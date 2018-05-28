@@ -1,15 +1,17 @@
-/* button,
-div,
-form,
-input {
-  margin: 10px;
-} */
+html{
+    position: relative;
+    min-height: 100%;
+}
 
 body{
   background: salmon;
   background-image: url("../images/bg.png");
   font-family: 'IBM Plex Sans', sans-serif;
+  width: 100%;   
+  height: 100%;
 }
+
+
 .gifLarge{
   width:100%;
 }
@@ -48,6 +50,7 @@ button{
   margin-bottom:10px;
 }
 
+
 .modal-dialog{
   max-width:650px;
 }
@@ -59,15 +62,11 @@ button{
 
 .caption{
   margin-top:5px;
+  color:gray;
 }
 
-.caption p{
-  float: left;
-}
-
-.caption i{
-  float: right;
-  color: black;
+.caption span{
+  color:black;
 }
 
 .color-change{
@@ -76,4 +75,23 @@ button{
 
 .btn.btn-success:focus{
   background: blueviolet;
+}
+
+.footer {
+  clear: both;
+  position: absolute;
+  font-size: 14px;
+  color: forestgreen;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+}
+
+.footer p{
+  padding-top:35px;
+  font-style: italic;
+}
+
+.footer .container{
+  background: none;
 }
