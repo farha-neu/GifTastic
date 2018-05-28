@@ -60,9 +60,9 @@ function displayGif(){
                 console.log(response);    
                 for(var i = 0; i < limit;i++){
                     var movieDiv = $("<div>");
-                    movieDiv.addClass("movie");
-                    var imageSmallStill = response.data[i].images.fixed_width_still.url;
-                    var imageSmall = response.data[i].images.fixed_width.url;
+                    movieDiv.addClass("movie col-md-3 col-sm-6");
+                    var imageSmallStill = response.data[i].images.fixed_height_still.url;
+                    var imageSmall = response.data[i].images.fixed_height.url;
                     var imageLargeStill = response.data[i].images.downsized_still.url;
                     var imageLarge = response.data[i].images.downsized_large.url;
                     var title = response.data[i].title;
@@ -78,9 +78,8 @@ function displayGif(){
                         "data-toggle":"modal",
                         "data-target":".exampleGif"
                     });
-                    hImageStill.addClass("gif");
-                    var hImage = $("<img>").attr("src",imageSmall);
-                    var hRating = $("<p>").text("Rating: "+rating);
+                    hImageStill.addClass("gif img-fluid img-thumbnail");
+                    var hRating = $("<p class='text-center'>").text("Rating: "+rating);
                     
                     movieDiv.append(hImageStill,hRating);
                     $("#movies-view").append(movieDiv);
@@ -123,7 +122,7 @@ $("#movies-view").on("click", ".gif", function() {
     $(this).attr("data-state", "still");
    
     var imgLarge = $("<img>").attr("src",$(this).attr("data-large"));
-    imgLarge.addClass("gifLarge img-fluid");
+    imgLarge.addClass("gifLarge");
     $(".modal-body").html(imgLarge);
     $(".modal-title").html($(this).attr("data-title"));
 

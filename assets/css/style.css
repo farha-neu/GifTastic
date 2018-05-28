@@ -33,3 +33,12 @@ button{
 .modal-content{
   background: honeydew;
 }
+
+.movie{
+  display: inline;
+}
+
+.movie img{
+  
+  width: 100%;
+}
