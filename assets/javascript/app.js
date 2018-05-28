@@ -48,7 +48,7 @@ function displayGif(){
 
         var apiKey = "gSO37gi7qmY9JPzPea7Z67N6B0d7CzjS";
         var limit = 10;
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q="+movie+"&api_key="+apiKey+"&limit="+limit;
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q="+movie+"&api_key="+apiKey+"&limit="+limit;
 
             $.ajax({
             url:queryURL,
