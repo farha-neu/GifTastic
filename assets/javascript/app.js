@@ -7,7 +7,7 @@ if(typeof(Storage) !== "undefined") {
     }
     else{
         console.log("not stored");
-        var movies=["Wall-E","The Avengers","Friends","How I met your mother","Breaking Bad", "A Walk to Remember","Life is Beautiful"];
+        var movies=["13 Reasons why","Wall-E","Breaking Bad","A Walk to Remember","Life is Beautiful","Friends","How I met your mother"];
         // convert to string
         localStorage.setItem("mov", JSON.stringify(movies));
     }
