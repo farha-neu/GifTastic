@@ -77,6 +77,13 @@ button{
   background: blueviolet;
 }
 
+.btn.btn-default{
+  background: rgb(173,216,230,0.4);
+}
+.btn.btn-default:hover{
+  background: rgb(173,216,230);
+}
+
 .footer {
   clear: both;
   position: absolute;
