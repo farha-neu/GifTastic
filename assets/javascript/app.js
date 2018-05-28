@@ -66,7 +66,6 @@ function displayGif(){
                     movieDiv.addClass("movie img-thumbnail");
                     var imageSmallStill = response.data[i].images.fixed_height_still.url;
                     var imageSmall = response.data[i].images.fixed_height.url;
-                    var imageLargeStill = response.data[i].images.downsized_still.url;
                     var imageLarge = response.data[i].images.downsized_large.url;
                     var title = response.data[i].title;
                     var rating = response.data[i].rating;
