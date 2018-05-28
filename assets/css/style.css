@@ -17,7 +17,10 @@ body{
 .jumbotron,.card-header,.img-thumbnail{
   background: rgb(173,216,230,0.4);
 }
-
+.jumbo .col-md-12{
+  margin: 0;
+  padding: 0;
+}
 button{
   margin-right:10px;
   margin-bottom:10px;
@@ -54,8 +57,6 @@ button{
   text-align: center;
 }
 
-
-
 .caption{
   margin-top:5px;
 }
@@ -67,4 +68,12 @@ button{
 .caption i{
   float: right;
   color: black;
+}
+
+.color-change{
+  background: blueviolet;
+}
+
+.btn.btn-success:focus{
+  background: blueviolet;
 }

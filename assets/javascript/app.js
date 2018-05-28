@@ -21,7 +21,9 @@ function renderMovieButtons(){
 
 function displayGif(){
 
-  
+    console.log($(this));
+    $(".movie-btn").removeClass("color-change");
+    $(this).addClass("color-change");
     var movie = $(this).attr("data-movie");
     // var qURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
    
@@ -56,6 +58,7 @@ function displayGif(){
             }).then(function(response){
 
                 $("#movies-view").empty();
+            
 
                 console.log(response);    
                 for(var i = 0; i < limit;i++){
@@ -96,7 +99,7 @@ function displayGif(){
 renderMovieButtons();
 
 
-$(document).on("click",".movie-btn",displayGif);
+$("#buttons-view").on("click",".movie-btn",displayGif);
 
 $("#add-movie").on("click",function(event){
     event.preventDefault();
