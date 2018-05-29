@@ -15,6 +15,10 @@ body{
 .gifLarge{
   width:100%;
 }
+.jumbotron{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 .jumbotron,.card-header,.img-thumbnail{
   background: rgb(173,216,230,0.4);
@@ -60,9 +64,10 @@ button{
   text-align: center;
 }
 
-.caption{
+.caption,span{
   margin-top:5px;
-  color:gray;
+  color:darkslategray;
+  font-weight:bold;
 }
 
 .caption span{
@@ -91,6 +96,15 @@ button{
   -webkit-text-stroke-width: 1px; 
 }
 
+#title{
+  font-family: 'Bowlby One SC', cursive;
+}
+
+#title, .alert-info{
+  color: blueviolet;
+  font-size: 20px;
+}
+
 .footer {
   clear: both;
   position: absolute;
@@ -108,4 +122,13 @@ button{
 
 .footer .container{
   background: none;
+}
+
+.movie-info img{
+  width:100%;
+  height:auto;
+}
+
+#poster img{
+  border:2px solid black;
 }

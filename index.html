@@ -17,15 +17,18 @@
 
 <!-- ***********
   Portfolio Link: https://farha-neu.github.io/Responsive-Portfolio/
-  **************
- -->
+  **************-->
 <body>
   
   <div class="container">
     <div class="row jumbo">
        <div class="col-md-12">
           <div class="jumbotron">
-              <h1><i class="fas fa-film"></i> Movie/TV Show GIF Generator</h1>
+              <img src="assets/images/icons8_Movie_50px.png"> 
+              <img src="assets/images/icons8_Romantic_Movies_48px.png">
+              <img src="assets/images/icons8_Movie_Projector_50px.png">
+              <img src="assets/images/icons8_Movie_Ticket_50px.png">
+              <h1>Movie/TV Show GIF Generator</h1>
               <p class="lead">Seach for your favourite movie GIF! Mouseover on GIF to animate/pause, and click to expand.</p>
             </div>
        </div>
@@ -68,11 +71,30 @@
 
         <!-- Movies will Get Dumped Dere -->
         
-        <div class="row">
-          <div id="movies-view" class="col-md-12"></div>
+        <!--Movie info from OMBD API --> 
+        <div class="card movie-info mb-2">
+              <div class="card-header text-center" id="title"></div>
+              <div class="card-body">
+                 <div class="row">
+                    <div class="col-md-2 mb-2" id="poster"></div>
+                    <div class="col-md-10 text-left">
+                       <p id="actors"></p>
+                       <p id="genre"></p>
+                       <p id="released"></p>
+                       <p id="imdbRating"></p>
+                       <p id="plot"></p>
+                    </div>
+                 </div>
+              </div>
         </div>
 
-          
+        <!-- GIF header -->
+        <div class="gif-header"></div>
+
+        <!-- GIF from giphy api -->
+        <div class="row">
+          <div id="movies-view" class="col-md-12"></div>
+        </div>       
    </div>
 
     <!-- Footer -->
