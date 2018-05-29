@@ -78,7 +78,7 @@ button{
   background: blueviolet;
 }
 
-.btn.btn-success:focus{
+.btn.btn-success:focus,.btn.btn.btn-success:hover{
   background: blueviolet;
 }
 
