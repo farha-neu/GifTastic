@@ -56,7 +56,7 @@ button{
 
 
 .modal-dialog{
-  max-width:650px;
+  max-width:550px;
 }
 
 .row{
@@ -83,10 +83,10 @@ button{
 }
 
 .btn.btn-default{
-  background: rgb(173,216,230,0.4);
+  background: rgb(173,216,230);
 }
 .btn.btn-default:hover{
-  background: rgb(173,216,230);
+  background: cadetblue;
 }
 
 .jumbotron h1{
