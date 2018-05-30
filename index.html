@@ -20,7 +20,7 @@
   **************-->
 <body>
   
-  <div class="container">
+  <div class="container mb-4">
     <div class="row jumbo">
        <div class="col-md-12">
           <div class="jumbotron">
@@ -35,19 +35,22 @@
     </div>
      <div class="row search">
        <div class="col-lg-8 col-md-7">
-          <div id="buttons-view"></div>
+          <div id="buttons-view">
+          </div>
        </div>
        <div class="col-lg-4 col-md-5">
           <div class="card">
-              <div class="card-header">
+              <div class="card-header alert-info">
                 <strong><i class="fas fa-plus-circle"></i> Add a Movie Button</strong>
               </div>
               <div class="card-body">
                 <form id="movie-form" class="form-inline">
-                    <input type="text" id="movie-input" class="form-control mr-2" placeholder="Type a movie name." required="true">
+                    <input type="text" id="movie-input" class="form-control mr-2 mb-2" placeholder="Type a movie name." required="true">
                    
-                    <input id="add-movie" class="btn btn-default" type="submit" value="Add">
+                    <input id="add-movie" class="btn btn-default mb-2" type="submit" value="Add">
                 </form>
+              </div>
+              <div class="card-footer"><button type="button" class="fav-btn btn btn-default">My Favorite GIFs</button>
               </div>
             </div>
        </div>
@@ -73,7 +76,7 @@
         
         <!--Movie info from OMBD API --> 
         <div class="card movie-info mb-2">
-              <div class="card-header text-center" id="title"></div>
+              <div class="card-header text-center alert-info" id="title"></div>
               <div class="card-body">
                  <div class="row">
                     <div class="col-md-2 mb-2" id="poster"></div>

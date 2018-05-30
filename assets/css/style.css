@@ -20,8 +20,11 @@ body{
   padding-bottom: 15px;
 }
 
-.jumbotron,.card-header,.img-thumbnail{
-  background: rgb(173,216,230,0.4);
+.jumbotron{
+  background: rgb(173,216,230);
+}
+.img-thumbnail{
+  background: snow;
 }
 .jumbo .col-md-12{
   margin: 0;
@@ -37,8 +40,7 @@ button{
 }
 
 .container{
-  background-color:rgb(240,255,240,0.9);
-  margin-bottom:30px;
+  background-color:rgb(240,255,240);
 }
 
 .modal-content{
@@ -75,11 +77,20 @@ button{
   color:black;
 }
 
+.caption i{
+  float: right;
+  color: red;
+}
+
+.caption i:hover{
+  cursor: pointer;
+}
+
 .color-change{
   background: blueviolet;
 }
 
-.btn.btn-success:focus,.btn.btn.btn-success:hover{
+.btn.btn-success:focus{
   background: blueviolet;
 }
 
@@ -113,4 +124,9 @@ button{
 
 #poster img{
   border:2px solid black;
+}
+
+.fav-btn{
+  font-family: 'Bowlby One SC', cursive;
+  color: blueviolet;  
 }
