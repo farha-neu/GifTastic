@@ -110,11 +110,11 @@ button{
 
 #title{
   font-family: 'Bowlby One SC', cursive;
+  font-size: 20px;
 }
 
 #title, .alert-info{
   color: blueviolet;
-  font-size: 20px;
 }
 
 .movie-info img{
