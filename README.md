@@ -1,5 +1,5 @@
 # Movie GifTastic
-Live Preview: https://farha-neu.github.io/GifTastic/
+Live Preview: https://farhajawed.github.io/GifTastic/
 1. Add your favorite movie/TV show buttons
 2. Click on a movie button to view movie details, and related gifs.
 3. Mouseover on each gif to animate or pause.
